@@ -11,7 +11,8 @@ st.write("Karibu Wilson! Huu ni mfumo wako wa AI unakuwezesha kuuliza chochote."
 api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
-model =
+model =model = genai.GenerativeModel('gemini-1.5-flash')
+
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 if "messages" not in st.session_state:
